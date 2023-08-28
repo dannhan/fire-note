@@ -34,7 +34,7 @@ body {
 
 .container {
   /* min-height: 100vh; */
-  padding-top: 4%;
+  padding-top: 40px;
   padding-left: 8%;
   padding-right: 8%;
 }
@@ -55,18 +55,19 @@ body {
 }
 
 .note-container {
-  min-height: 70vh;
+  height: 72vh;
   border-radius: 10px;
-  margin-top: 40px;
-  box-shadow: 0px 0px 15px 1px rgb(255, 89, 60);
+  margin-top: 35px;
+  padding: 25px;
+  box-shadow: black 0px 20px 30px -10px;
 }
 
 .input-box {
   position: relative;
   outline: none;
-  padding: 20px;
   overflow: auto;
-  height: 70vh;
+  min-height: 65vh;
+  max-height: 65vh;
   font-size: 18px;
 }
 
@@ -87,4 +88,20 @@ body {
 
 .add-btn:hover {
   color: #de4c4a;
+}
+
+@media only screen and (max-width: 480px) {
+  .note-emoji {
+    display: none;
+  }
+
+  .header-box {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .note-container {
+    padding: 0px;
+    box-shadow: none;
+  }
 }
